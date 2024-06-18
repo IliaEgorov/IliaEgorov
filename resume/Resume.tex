@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Ilia} % Your first name
+\familyname{Egorov} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Resume}
+% \address{30 22 Mira}{Zarechny, Penzenskaya oblast 442960}
+\mobile{+357 97719018}
+\email{IEgorov.BH@gmail.com}
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+Throughout my career, I've developed a keen interest in A/B tests, product management, and how my projects impact product and business metrics. I'm passionate about collaborating with cross-functional teams to translate data-driven insights into meaningful product features and improvements that drive business growth.
+
+\section{WORK EXPERIENCE}
+\cventry{2021--}{Analytics Team Lead}{Veraxen. Game development company}{Cyprus}{}{
+	\begin{itemize}
+		\item Management of data analyst, scientist and engineer team of 10 specialists
+		\item Built a process of short-term (Scrum) and long-term (quarter) planning, performance review and individual development plan of the team
+		\item Improving collaboration between data analysts and scientists with stakeholders
+		\item Build the process of conducting, analyzing experiments (a/b tests). The number of experiments was increased by 20 times
+		\item Made about 30 different dashboards and reports in the BI system. A new BI system  increased the time of making decisions by stakeholders
+		\item Created a DWH, modeled the main domain of the business, which increased the speed of adhoc analysis, self service BI
+		\item Maintenance of GCP solution. Optimization of costs and performance of queries
+		\item Created an infrastructure for DWH, ML models, experiments, BI. (BigQuery, dbt, airflow, airbyte, growthbook, mlflow, docker)
+		\item Developed predictive models for product purposes (classic ML)
+	\end{itemize}
+}
+
+\cventry{2021}{Product analyst}{Flo health. Women health application}{Remote}{}{
+	Full stack product development analytical support in the commercial stream from an idea to delivery in the production. 
+}
+
+\cventry{2019--2021}{Product data  analyst}{Exness}{Cyprus}{}{
+	Data analysis, data engineering
+	\begin{itemize}
+		\item Ad-hoc analysis by SQL (DWH Vertica, Amplitude)
+		\item Development of corporate metrics and KPIs map, analysis and forecasting. (Tableau)
+		\item BI layer datamarts developing (DWH Architecture)
+		\item A/B tests recommendations and statistical analysis of the results (statistics/python).
+		\item Hiring, onboarding of new data analysts 
+		\item Project management (lightweighted Prince2 framework)
+	\end{itemize}
+}
+
+\cventry{2018--2019}{Data analyst}{Arbina. Startup. The main product is a pixel coloring app (1M DAU)}{}{}{
+	\begin{itemize}
+		\item Ad-hoc analysis by python/pandas, MongoDB, csv-files.
+		\item Regular reports and alerts system with product metrics (LTV, conversion, retention, ARPU, MAU) by backend python/flask, REST API, docker
+		\item ETL from Hadoop/Hbase cluster to MongoDB by Spark/Java
+		\item AppStore, googlePlay parsing and integration for the reporting system by python, beautifulSoup, docker
+	\end{itemize}
+}
+
+\cventry{2016--2018}{Analyst}{Vigrom corp. Game development company}{}{}{ Promotion of data-driven approach in the company. 
+	\begin{itemize}
+		\item Ad-hoc analysis by SQL, python/pandas, Postgresql.
+		\item Regular BI reports by redash, python/flask/dash/plotly
+		\item A/B tests recommendations and statistical analysis of the results (statistics/python).
+		\item Development of corporate metrics and KPIs map, analysis and forecasting. LTV, conversion rates, retention, ARPPU, MAU, ROI, ...
+	\end{itemize}
+}	
+
+\cventry{2010--2015}{C++ Developer}{Companies(ANTEsoft, Nagradion)}{Penza}{}{Developing efficient numerical algorithms and methods for calculation of the physical model}
+
+\section{EDUCATION}
+\cventry{2009--2015}{Master of Physics}{The Penza State University}{Penza, Russia}{GPA = 5.0}{}
+\cventry{2013--2014}{Research scientific training}{The Karlsruhe Institute of Technology}{Karlsruhe, Germany}{}{Exploring microscopic defects within the material of superconducting qubits}  % Arguments not required can be left empty
+
+
+\section{KEY SKILLS AND COMPETENCIES}
+
+{BigQuery, SQL, dbt, python, pandas, ml, tensorflow, mlflow, numpy, scipy, sklearn, matlab, plotly/dash, redash, tableau, amplitude, looker, docker, Git}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{LANGUAGES}
+
+\cvitemwithcomment{English}{Upper intermediate}{}
+\cvitemwithcomment{German}{Basic}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+%
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%
+%\cvlistdoubleitem{Data science}{Machine learning}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
